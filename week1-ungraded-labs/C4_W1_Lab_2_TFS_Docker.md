@@ -19,6 +19,9 @@ docker pull tensorflow/serving
 ```
 This is the most minimal image that you can run TFS on. It contains all of the necessary dependencies to run TFS and was created with image size in mind, as a result of this it is around 400 mb in size.
 
+### Expected result
+![image_pull](../results/docker1.png)
+
 ## Clone the repo with the dummy model
 
 Now you will clone the official TFS [repo](https://github.com/tensorflow/serving), which contains a dummy model named `Half Plus Two` that returns `0.5 * x + 2` for any value of `x`. 
