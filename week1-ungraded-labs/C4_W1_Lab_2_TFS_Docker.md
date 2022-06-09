@@ -19,7 +19,7 @@ docker pull tensorflow/serving
 ```
 This is the most minimal image that you can run TFS on. It contains all of the necessary dependencies to run TFS and was created with image size in mind, as a result of this it is around 400 mb in size.
 
-### Expected result
+###### Expected result
 ![image_pull](../results/docker1.png)
 
 ## Clone the repo with the dummy model
@@ -37,7 +37,7 @@ cd /tmp/tfserving
 
 git clone https://github.com/tensorflow/serving
 ```
-### Expected result
+###### Expected result
 ![clone_project](../results/docker_2.png)
 
 These commands perform these operations in order:
@@ -82,7 +82,7 @@ Wow, there is a lot of information in this command. Let's break it down to under
 
 After running this command TFS will spin up and host the `Half Plus Two` model.
 
-### Expected result
+###### Expected result
 ![run tfserving](../results/docker3.png)
 
 -------
@@ -112,7 +112,7 @@ The last parameter of the command is the `URL` where it should make the request 
 
 After running the request you should be prompted with the prediction for each one of the three numbers you submitted.
 
-### Expected result
+###### Expected result
 ![consume_model](../results/consume_model.png)
 -----
 
