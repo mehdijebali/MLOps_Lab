@@ -82,6 +82,8 @@ Wow, there is a lot of information in this command. Let's break it down to under
 
 After running this command TFS will spin up and host the `Half Plus Two` model.
 
+### Expected result
+![run tfserving](../results/docker3.png)
 
 -------
 
