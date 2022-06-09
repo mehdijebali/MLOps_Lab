@@ -112,6 +112,8 @@ The last parameter of the command is the `URL` where it should make the request 
 
 After running the request you should be prompted with the prediction for each one of the three numbers you submitted.
 
+### Expected result
+![consume_model](../results/consume_model.png)
 -----
 
 ## Stopping the server
