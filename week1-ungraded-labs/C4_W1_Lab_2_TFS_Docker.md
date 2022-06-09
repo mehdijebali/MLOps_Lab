@@ -37,6 +37,8 @@ cd /tmp/tfserving
 
 git clone https://github.com/tensorflow/serving
 ```
+### Expected result
+![clone_project](../results/docker_2.png)
 
 These commands perform these operations in order:
 - Create a directory called `tfserving` under the temporal directory `/tmp`.
