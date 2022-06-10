@@ -6,6 +6,7 @@ from pydantic import BaseModel
 
 app = FastAPI(title="Predicting Wine Class")
 
+
 # Represents a particular wine (or datapoint)
 class Wine(BaseModel):
     alcohol: float
@@ -22,7 +23,7 @@ class Wine(BaseModel):
     od280_od315_of_diluted_wines: float
     proline: float
 
-
+    
 @app.on_event("startup")
 def load_clf():
     # Load classifier from pickle file
@@ -30,11 +31,9 @@ def load_clf():
         global clf
         clf = pickle.load(file)
 
-
 @app.get("/")
 def home():
     return "Congratulations! Your API is working as expected. Now head over to http://localhost:80/docs"
-
 
 @app.post("/predict")
 def predict(wine: Wine):
@@ -62,3 +61,4 @@ def predict(wine: Wine):
     pred = pred[0]
     print(pred)
     return {"Prediction": pred}
+   
