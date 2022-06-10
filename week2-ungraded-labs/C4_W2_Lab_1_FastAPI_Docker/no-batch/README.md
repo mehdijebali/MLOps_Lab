@@ -213,6 +213,9 @@ You can use the `-t` flag to specify the name of the image and its tag. As you s
 
 After a couple of minutes your image should be ready to be used! If you want to see it along with any other images that you have on your local machine use the `docker images` command. This will display all of you images alongside their names, tags and size.
 
+#### Expected result
+![build_docker_image](../../../results/fastapi_1.png)
+
 
 
 ## Run the container
