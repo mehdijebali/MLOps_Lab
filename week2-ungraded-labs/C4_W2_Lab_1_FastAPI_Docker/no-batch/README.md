@@ -234,7 +234,13 @@ At the end of the command is the name and tag of the image you want to run.
 
 After some seconds the container will start and spin up the server within. You should be able to see FastAPI's logs being printed in the terminal. 
 
-Now head over to [localhost:80](http://localhost:80) and you should see a message about the server spinning up correctly.
+#### Expected result
+![build_docker_image](../../../results/docker_run_no_batch.png)
+
+Now head over to [localhost:80](http://localhost:80/docs) and you should see a message about the server spinning up correctly.
+
+#### Expected result
+![build_docker_image](../../../results/doc.png)
 
 **Nice work!**
 
@@ -263,6 +269,9 @@ Every request should contain the data that represents a wine in `JSON` format li
 ```
 
 This example represents a class 1 wine.
+
+#### Expected result
+![build_docker_image](../../../results/no-batch_prediction.png)
 
 Remember from Course 1 that FastAPI has a built-in client for you to interact with the server. You can use it by visiting [localhost:80/docs](http://localhost:80/docs)
 
